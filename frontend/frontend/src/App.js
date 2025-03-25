@@ -1,19 +1,27 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import UsersPage from "./pages/pasindu/UsersPage";
+import { Routes, BrowserRouter, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
+
+import CreateUser from "./pages/pasindu/CreateUser";
+import UserList from "./pages/pasindu/UsersList";
+import UpdateUser from "./pages/pasindu/UpdateUser";
+import Login from "./pages/pasindu/LoginPage";
+import MyProfile from "./pages/pasindu/MyProfile";
 
 function App() {
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link> |<Link to="/users">Users</Link>
-      </nav>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/users" element={<UsersPage />} />
-      </Routes>
+          <Route path="/register" element={<CreateUser />} />
+          <Route path="/user-list" element={<UserList />} />
+          <Route path="/update-user/:id" element={<UpdateUser />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/myprofile" element={<MyProfile />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
