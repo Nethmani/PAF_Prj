@@ -1,0 +1,5 @@
+# MongoDB Atlas URI
+spring.data.mongodb.uri=mongodb+srv://admin:sliit%402025@itpm-prj.o08rs.mongodb.net/PAF
+
+# Optional: Show MongoDB queries in logs
+logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG
