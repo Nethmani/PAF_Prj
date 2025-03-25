@@ -1,0 +1,9 @@
+1742843692535	Delete element
+1742844990523	Rename resource 'com.paf_grp.backend'
+1742845258556	Move 'controller' to 'backend'
+1742845270623	Move 'model' to 'backend'
+1742845273164	Move 'config' to 'backend'
+1742845274975	Move 'repository' to 'backend'
+1742845277427	Move 'service' to 'backend'
+1742845282059	Move 'BackendApplication.java' to 'backend'
+1742845332440	Delete element
